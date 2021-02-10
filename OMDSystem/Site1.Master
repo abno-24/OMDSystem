@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OMDSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <%--- Bootstrap css ---%>
+    <link href="BootStrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <%--- Datatables css ---%>
+    <link href="Datatables/CSS/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--- Fontawesome css ---%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <!---Our Custom CSS--->
+    <link href="CSS/Customestylesheet.css" rel="stylesheet" />
+
+    <%---jquery---%>
+    <script src="BootStrap/JS/jquery-3.3.1.slim.min.js"></script>
+    <%---popper js---%>
+    <script src="BootStrap/JS/popper.min.js"></script>
+    <%---bootstrap js---%>
+    <script src="BootStrap/JS/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <%---Navbar---%>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/donatedMedicine1.png" width="40" height="30"/>
+                    Online Medicine Donation
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+                   </ul>
+                   <ul class="navbar-nav">
+                      <li class="nav-item active">
+                          <asp:LinkButton Class="nav-link" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
+                      </li>
+                      <li class="nav-item active">
+                          <asp:LinkButton Class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                      </li>
+                      <li class="nav-item active">
+                          <asp:LinkButton Class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                      </li>
+                      <li class="nav-item active">
+                          <asp:LinkButton Class="nav-link" ID="LinkButton4" runat="server">Hello User</asp:LinkButton>
+                      </li>
+                   </ul>
+                </div>
+            </nav>
+        </div>
+        <%---Navbar---%>
+
+        <%---Main Content Holder---%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%---Main Content Holder---%>
+
+        <%---Footer---%>
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton Class="footerlinks" ID="Linkbutton5" runat="server">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton Class="footerlinks" ID="Linkbutton6" runat="server">NGO login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton Class="footerlinks" ID="Linkbutton7" runat="server">Donated Medicine</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton Class="footerlinks" ID="Linkbutton8" runat="server">Donor Management</asp:LinkButton>
+                            &nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right reserved. <a class="footerlinks" href="#" target="_blank">
+                            Online Medicine Donation </a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <%---Footer---%>
+        
+
+    </form>
+</body>
+</html>
