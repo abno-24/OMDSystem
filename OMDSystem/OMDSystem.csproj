@@ -67,13 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="adminLogin.aspx" />
     <Content Include="adminNGOmanagement.aspx" />
-    <Content Include="BootStrap\CSS\bootstrap.min.css" />
-    <Content Include="BootStrap\JS\bootstrap.bundle.min.js" />
-    <Content Include="BootStrap\JS\bootstrap.min.js" />
-    <Content Include="BootStrap\JS\jquery-3.3.1.slim.min.js" />
-    <Content Include="BootStrap\JS\popper.min.js" />
+    <Content Include="Bootstrap\CSS\bootstrap.min.css" />
+    <Content Include="Bootstrap\JS\bootstrap.bundle.min.js" />
+    <Content Include="Bootstrap\JS\bootstrap.min.js" />
+    <Content Include="Bootstrap\JS\popper.min.js" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="CSS\Customestylesheet.css" />
     <Content Include="Datatables\CSS\jquery.dataTables.min.css" />
     <Content Include="Datatables\JS\jquery.dataTables.min.js" />
@@ -1725,12 +1726,16 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="forgetPassword.aspx" />
     <Content Include="Homepage.aspx" />
+    <Content Include="imgs\AboutUs.png" />
     <Content Include="imgs\adminLogin.png" />
+    <Content Include="imgs\contact_us.png" />
     <Content Include="imgs\detail.png" />
     <Content Include="imgs\Doanted medicine.png" />
     <Content Include="imgs\donatedMedicine1.png" />
     <Content Include="imgs\expiredMedicine.png" />
+    <Content Include="imgs\forget_password.png" />
     <Content Include="imgs\home.png" />
     <Content Include="imgs\HomePageImg1.png" />
     <Content Include="imgs\ngocenter1.jpg" />
@@ -1754,6 +1759,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminLogin.aspx.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1767,6 +1779,20 @@
     </Compile>
     <Compile Include="adminNGOmanagement.aspx.designer.cs">
       <DependentUpon>adminNGOmanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPassword.aspx.cs">
+      <DependentUpon>forgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgetPassword.aspx.designer.cs">
+      <DependentUpon>forgetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

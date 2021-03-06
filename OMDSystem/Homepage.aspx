@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="OMDSystem.Homepage" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="OMDSystem.Homepage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
@@ -42,6 +43,7 @@
                     </center>
                 </div>
             </div>
+          </div>
     </section>
     <section>
         <img src="imgs/home.png" class="img-fluid"/>
@@ -82,6 +84,7 @@
                     </center>
                 </div>
             </div>
+        </div>
     </section>
     
 </asp:Content>

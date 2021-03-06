@@ -20,7 +20,7 @@
                                 <center>
                                     <h4>Your Profile</h4>
                                     <span>Account Status - </span>
-                                    <asp:Label class="badge rounded-pill bg-success" ID="Label1" runat="server" Text="Active"></asp:Label>
+                                    <asp:Label CssClass="badge rounded-pill bg-success" ID="Label1" runat="server" Text="Active"></asp:Label>
                                 </center>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                             <div class="col-md-4">
                                 <label>State</label>
                                 <div class="form-group">
-                                    <asp:DropDownList Class="form-control" ID="DropDownList1" runat="server">
+                                    <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
                                         <asp:ListItem Text="select" Value="select" />
                                         <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
                                         <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
@@ -200,7 +200,7 @@
 
                         <div class="row">
                             <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView CssClass="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
                             </div>
                         </div>
                        

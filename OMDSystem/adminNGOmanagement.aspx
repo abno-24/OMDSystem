@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminNGOmanagement.aspx.cs" Inherits="OMDSystem.adminNGOmanagement" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
@@ -35,7 +41,7 @@
                                     <div class="input-group">
                                         <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server"
                                         placeholder="ID"></asp:TextBox><br />
-                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" />
+                                        <asp:Button CssClass="btn btn-primary" ID="Button1" runat="server" Text="Go" OnClick="Button1_Click" />
                                     </div>
                                 </div>
                             </div>
@@ -51,9 +57,9 @@
 
                         <div class="d-grid gap-4 d-md-block">
                             <center>
-                            <asp:Button class="btn btn-success" ID="Button2" runat="server" Text="Add" />
-                            <asp:Button class="btn btn-warning" ID="Button3" runat="server" Text="Update" />
-                            <asp:Button class="btn btn-danger" ID="Button4" runat="server" Text="Delete" />
+                            <asp:Button CssClass="btn btn-success" ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" />
+                            <asp:Button CssClass="btn btn-warning" ID="Button3" runat="server" Text="Update" OnClick="Button3_Click" />
+                            <asp:Button CssClass="btn btn-danger" ID="Button4" runat="server" Text="Delete" OnClick="Button4_Click" />
                             </center>
                         </div>
                     </div>
@@ -79,8 +85,14 @@
                         </div>
 
                         <div class="row">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=LAPTOP-258O2DGA;Initial Catalog=OMDSdb;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [ngo_management]"></asp:SqlDataSource>
                             <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                <asp:GridView Class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ngo_id" DataSourceID="SqlDataSource1">
+                                    <Columns>
+                                        <asp:BoundField DataField="ngo_id" HeaderText="ngo_id" ReadOnly="True" SortExpression="ngo_id" />
+                                        <asp:BoundField DataField="ngo_name" HeaderText="ngo_name" SortExpression="ngo_name" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                         </div>
                        
@@ -88,6 +100,6 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
 
 </asp:Content>

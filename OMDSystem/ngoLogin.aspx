@@ -45,7 +45,7 @@
                                     <button class="btn btn-success" type="button">Login</button>
 
                                     <a href="userSignup.aspx"><input class="btn btn-primary" id="Button1" type="button" value="Register"/></a>
-                                    <asp:Label class="text-center fw-lighter" ID="Label1" runat="server" Text="Label">
+                                    <asp:Label CssClass="text-center fw-lighter" ID="Label1" runat="server" Text="Label">
                                         Register your NGO by Clicking Register</asp:Label>
                                 </div>
                             </div>

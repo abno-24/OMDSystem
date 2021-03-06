@@ -7,10 +7,18 @@
     color: #ffd800;
 }
 
-#footer1{
+#footer1 {
     background: #762b00;
 }
 
-#footer2{
+#footer2 {
     background: #531f00;
+}
+
+.forgetLink{
+    text-decoration:none;
+}
+
+#img{
+    opacity:0.5;
 }

@@ -37,15 +37,17 @@
 
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server"
-                                        placeholder="Password" TextMode="Password"></asp:TextBox><br />
+                                        placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <a href="forgetPassword.aspx">forget password?</a>
+                                    <br /><br />
 
                                 </div>
 
                                 <div class="d-grid gap-2 col-12 mx-auto">
-                                    <button class="btn btn-success" type="button">Login</button>
+                                    <asp:Button ID="Button2" CssClass="btn btn-success" runat="server" Text="Login" OnClick="Button2_Click" />
 
                                     <a href="userSignup.aspx"><input class="btn btn-primary" id="Button1" type="button" value="Sign Up"/></a>
-                                    <asp:Label class="text-center fw-lighter" ID="Label1" runat="server" Text="Label">
+                                    <asp:Label CssClass="text-center fw-lighter" ID="Label1" runat="server" Text="Label">
                                         Create New Account by Clicking SignUp</asp:Label>
                                 </div>
                             </div>

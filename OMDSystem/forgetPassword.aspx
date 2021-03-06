@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="adminLogin.aspx.cs" Inherits="OMDSystem.adminLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="forgetPassword.aspx.cs" Inherits="OMDSystem.forgetPassword" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-    <div class="container">
+     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card">
@@ -11,14 +11,14 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <img width="150px" src="imgs/adminLogin.png" />
+                                    <img width="150px" src="imgs/forget_password.png" />
                                 </center>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h3>Admin Login</h3>
+                                    <h3>Forget Password</h3>
                                 </center>
                             </div>
                         </div>
@@ -31,20 +31,11 @@
                             <div class="col">
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server"
-                                        placeholder="Email"></asp:TextBox><br />
-
-                                </div>
-
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server"
-                                        placeholder="Password" TextMode="Password"></asp:TextBox>
-                                    <a href="forgetPassword.aspx">forget password?</a>
-                                    <br /><br />
-
+                                        placeholder="Email" TextMode="Email"></asp:TextBox><br />
                                 </div>
 
                                 <div class="d-grid gap-2 col-12 mx-auto">
-                                    <asp:Button CssClass="btn btn-success" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                                    <button class="btn btn-success" type="button">Submit</button>
                                 </div>
 
                             </div>
