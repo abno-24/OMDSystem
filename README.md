@@ -11,6 +11,6 @@ with the help of my website anyone can donate unused or even expired medicine to
 NGO will collect medicine from user and if it is unused medicine then NGO will donate it to the Government hospital so the poor people can get medicine as per the need,
 but if is expired medicine then NGO will give it to the pharmaceutical company for its proper disposal.
 
-I have used HTML, CSS, Bootstrap and C# for develop frontend and SQL Server for the backend.
+I have build this project on ASP.net framework and used HTML, CSS, Bootstrap and C# for develop frontend and SQL Server for the backend.
 
 
